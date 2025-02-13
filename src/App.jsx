@@ -1,5 +1,13 @@
+import { MemoryProvider } from "./MemoryGameLogic"
+import MemoryGame from "./MemoryGame"
+
 export default function App() {
   return (
-    <>hello world!</>
+    <>
+      <h1>memory game</h1>
+      <MemoryProvider>
+        <MemoryGame/>
+      </MemoryProvider>
+    </>
   )
 }
